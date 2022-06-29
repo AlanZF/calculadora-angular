@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="container-row">
+        <button type="button" class="btn btn-warning" 
+        (click)="clear()">C</button>
+        <input class="form-control" type="text"
+        [value]="display" disabled>
+    </div>
+    <div class="container-row">
+        <div><button type="button" class="btn btn-danger"
+            (click)="performOperation('-')">-</button></div>
+        <div><button type="button" class="btn btn-primary"
+            (click)="addNumber('1')">1</button></div>
+        <div><button type="button" class="btn btn-primary"
+            (click)="addNumber('2')">2</button></div>
+        <div><button type="button" class="btn btn-primary"
+            (click)="addNumber('3')">3</button></div>
+    </div>
+    <div class="container-row">
+        <div><button type="button" class="btn btn-danger"
+            (click)="performOperation('+')">+</button></div>
+        <div><button type="button" class="btn btn-primary"
+            (click)="addNumber('4')">4</button></div>
+        <div><button type="button" class="btn btn-primary"
+            (click)="addNumber('5')">5</button></div>
+        <div><button type="button" class="btn btn-primary"
+            (click)="addNumber('6')">6</button></div>
+    </div>
+    <div class="container-row">
+        <div><button type="button" class="btn btn-danger"
+            (click)="performOperation('*')">*</button></div>
+        <div><button type="button" class="btn btn-primary"
+            (click)="addNumber('7')">7</button></div>
+        <div><button type="button" class="btn btn-primary"
+            (click)="addNumber('8')">8</button></div>
+        <div><button type="button" class="btn btn-primary"
+            (click)="addNumber('9')">9</button></div>
+    </div>
+    <div class="container-row">
+        <div><button type="button" class="btn btn-danger"
+            (click)="performOperation('/')">/</button></div>
+        <div><button type="button" class="btn btn-warning"
+            (click)="addNumber('.')">.</button></div>
+        <div><button type="button" class="btn btn-primary"
+            (click)="addNumber('0')">0</button></div>
+        <div><button type="button" class="btn btn-warning"
+            (click)="calculate()">=</button></div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+.container {
+    display: block;
+    background-color: rgba(183, 192, 193, 0.646);
+    width: 260px;
+    padding: 10px;
+    border-radius: 5%;
+}
+
+.container-row {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5px;
+}
+
+.form-control {
+    width: 178px;
+}
+
+button {
+    margin: 3px;
+    height: 35px;
+    width: 50px;
+}
